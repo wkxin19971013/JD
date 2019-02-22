@@ -1,0 +1,195 @@
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+/* 头部 */
+header{
+    height: .44rem;
+    line-height: .44rem;
+    background: #fff;
+    font-size: .17rem;
+    z-index: 999;
+    position: relative;
+    text-align: center;
+}
+header .icon-goback{
+    top: .1rem;
+    left: .2rem;
+    background: url(../img/jiantou.png)
+}
+header .icon{
+    width: .24rem;
+    height: .24rem;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+header .txt-header{
+    line-height: .44rem;
+    font-size: .17rem;
+    text-align: center;
+}
+/* 用户登录 */
+.user-password{
+    width: 3.25rem;
+    height: 1.2rem;
+    margin: auto;
+}
+.user-password .input{
+    height: .5rem;
+    line-height: 0.5rem;
+    position: relative;
+    width: 100%;
+    margin-top: .2rem;
+    background: #fff;
+    border-bottom: .01rem solid #efefef;
+    box-sizing: border-box;
+    font-size: 0.16rem;
+}
+.user-password input{
+    font-size: 0.16rem;
+}
+.checkbtn{
+    position: relative;
+    top: -0.4rem;
+    left:2.1rem;
+    display: block;
+    width: .24rem;
+    height: .24rem;
+    background-image: url(../img/biyan.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.user-password span{
+    position: absolute;
+    line-height: .23rem;
+    right: 0;
+    top: .125rem;
+    color: #222;
+    font-size: .14rem;
+    text-align: center;
+    padding-left: .16rem;
+    border-left: 1px solid #ccc;
+}
+/* 红色按钮 */
+.red{
+    width: 3.25rem;
+    height: 1.2rem;
+    margin: auto;
+    margin-top: 0.2rem;
+}
+.red .btn{
+    line-height: .5rem;
+    text-align: center;
+    display: block;
+    border-radius: .25rem;
+    font-size: .16rem;
+    color: #fff;
+    background-image: linear-gradient(90deg,#fab3b3,#ffbcb3 73%,#ffcaba);
+}
+.red .btn2{
+    border: 1px solid #ff2000;
+    color: #f10000;
+    background: #fff;
+    margin-top: .1rem;
+}
+/*  红色按钮下字 */
+.text{
+    margin: auto;
+    margin-top: 0.2rem;
+    width: 3.25rem;
+    height: 0.22rem;
+}
+.text a{
+    float: left;
+    display: block;
+    color: #999;
+    line-height: .22rem;
+    font-size: .14rem;
+    text-align: center;
+}
+.text .r{
+    float: right;
+}
+/* 最底部 */
+.foot{
+    width: 3.25rem;
+    height: 1.36rem;
+    margin: auto;
+    margin-top: 0.88rem;
+}
+.foot .foot-1{
+    height: .8rem;
+    position: relative;
+    padding: .245rem 0 0;
+    border-top: 1px solid #efefef;
+    text-align: center;
+}
+.foot .foot-1 .h4{
+    font-size: .12rem;
+    font-weight: 400;
+    position: absolute;
+    top: -.14rem;
+    left: 50%;
+    background-color: #fff;
+    padding: .05rem .15rem;
+    color: #ccc;
+    transform: translateX(-50%);
+}
+.foot-1 a{
+    position: relative;
+    width: .48rem;
+    height: .48rem;
+    color: #616161;
+    margin: 0 .15rem;
+    font-size: .14rem;
+    display: inline-block;
+    text-align: center;
+    float: left;
+    margin-left: 0.7rem;
+}
+.icon-qq{
+    width: 48px;
+    height: 48px;
+    background: url(../img/qq.png);
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.foot-1 span{
+    position: absolute;
+    bottom: -.23rem;
+    left: 0;
+    display: inline-block;
+    width: .48rem;
+    text-align: center;
+    color: #999;
+    font-size: .12rem;
+}
+.icon-wx{
+    width: 48px;
+    height: 48px;
+    background: url(../img/wx.png);
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.foot-2{
+    margin-top: .12rem;
+    text-align: center;
+    font-size: .13rem;
+    color: #bebebe;
+}
+.foot-2 a{
+    width: auto;
+    margin: 0;
+    color: #409eff;
+}

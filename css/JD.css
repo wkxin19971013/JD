@@ -1,0 +1,592 @@
+body {
+    max-width: 6.4rem;
+    min-width: 3.2rem;
+    background-color: white;
+    font-size: 0.14rem;
+    margin: 0 auto;
+    color: #666;
+}
+
+.body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.i {
+    background: url(../img/jd-sprites.png) no-repeat;
+}
+
+/* 导航============================= */
+header {
+    width: 100%;
+    min-height: 0.44rem;
+    position: fixed;
+    left: 0;
+    z-index: 999
+}
+
+header.active {
+    background-color: #e43130;
+}
+
+header .head {
+    max-width: 6.4rem;
+    min-width: 3.2rem;
+    margin: 0 auto;
+    min-height: 0.44rem;
+    overflow: hidden;
+    position: relative;
+}
+
+header .head .head-left {
+    width: 0.2rem;
+    height: 0.18rem;
+    margin-top: 0.14rem;
+    margin-left: 0.15rem;
+    cursor: pointer;
+    float: left;
+}
+
+header .head .head-left img {
+    width: 100%;
+}
+
+header .head .head-right {
+    width: 0.28rem;
+    height: 0.21rem;
+    margin-top: 0.12rem;
+    margin-right: 0.15rem;
+    cursor: pointer;
+    float: right;
+    color: white
+}
+
+header .head .head-center {
+    width: 100%;
+    position: absolute;
+    min-height: 0.44rem;
+    top: 0;
+    z-index: 100;
+}
+
+header .head .head-center section {
+    margin: 0 0.2rem 0 0.5rem;
+    min-height: 0.44rem;
+    overflow: hidden;
+}
+
+header .head .head-center section .h-c-all {
+    margin-top: 0.07rem;
+    height: 0.3rem;
+    position: relative;
+    margin-right: 0.32rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.head-center section .h-c-all .c-all-left {
+    width: 0.2rem;
+    height: 0.15rem;
+    background: url(../img/1.png) no-repeat;
+    background-size: 0.2rem 0.15rem;
+    margin: 0.07rem 0.08rem 0 0.15rem;
+    float: left;
+    position: relative;
+}
+
+.head-center section .h-c-all .c-all-left::after {
+    content: "";
+    position: absolute;
+    border-right: 0.01rem solid #ddd;
+    top: 0;
+    left: 0.26rem;
+    height: 0.16rem;
+}
+
+.head-center section .h-c-all i {
+    display: block;
+    width: 0.18rem;
+    height: 0.15rem;
+    background-position: -0.8rem 0;
+    background-size: 2rem;
+    margin: 0.08rem 0 0 0.05rem;
+    position: relative;
+    z-index: 1;
+    float: left;
+}
+
+.head-center section .h-c-all>span {
+    font-size: 0.12rem;
+    line-height: 0.3rem;
+    margin-left: 0.1rem;
+}
+
+/* head输入框点击出现的内容=============== */
+.head-zhe {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+}
+
+.head-zhe header {
+    background-color: white;
+}
+
+.head-zhe input {
+    font-size: 0.12rem;
+    width: 1.9rem;
+    margin: 0.08rem 0rem 0.1rem 0.1rem
+}
+
+.head-zhe .header-zhe-all {
+    margin-top: 0.15rem;
+    padding-left: 0.13rem;
+}
+
+.head-zhe .header-zhe-all p {
+    padding-bottom: 0.11rem
+}
+
+.head-zhe .header-zhe-all ul li {
+    float: left;
+    padding: 0 0.13rem;
+    font-size: 0.12rem;
+    height: 0.23rem;
+    line-height: 0.24rem;
+    border-radius: 0.03rem;
+    color: #686868;
+    background-color: #f0f2f5;
+    box-sizing: border-box;
+    margin-right: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+
+.head-zhe .header-zhe-all ul li.active {
+    color: red;
+}
+
+/* 轮播图================= */
+.lunbo {
+    width: 100%;
+    height: 1.84rem;
+    /* background-color: gold; */
+    overflow: hidden;
+    position: relative;
+    top: 0;
+}
+
+.lunbo section {
+    width: 800%;
+    height: 100%;
+    position: relative;
+}
+
+.lunbo section div {
+    width: 12.5%;
+    height: 100%;
+    float: left;
+    /* background-color: darkcyan */
+}
+
+.lunbo section div img {
+    width: 100%;
+}
+
+.lunbo>div {
+    position: absolute;
+    bottom: 0.27rem;
+    text-align: center;
+    transform: translateX(-50%);
+    left: 50%;
+    box-sizing: border-box;
+}
+
+.lunbo>div>span {
+    float: left;
+    width: 0.04rem;
+    height: 0.04rem;
+    border-radius: 50%;
+    border: 0.01rem solid #fff;
+    margin: 0 0.07rem;
+    display: block;
+}
+
+.lunbo>div>span.active {
+    background-color: white;
+
+}
+
+/* 满减============ */
+.manjie {
+    width: 100%;
+    height: 1.01rem;
+    background-color: rosybrown;
+    margin-top: -0.17rem;
+    position: relative;
+    z-index: 25;
+}
+
+.manjie img {
+    height: 100%;
+    float: left;
+}
+
+/* 分类========== */
+.fenlei {
+    width: 100%;
+    height: 1.625rem;
+    position: relative;
+}
+
+.fenlei img {
+    width: 100%;
+}
+
+.fenlei>div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.fenlei>div span {
+    display: block;
+    width: 20%;
+    height: 0.74rem;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fenlei>div span img {
+    width: 0.41rem;
+    vertical-align: top;
+    margin-top: 0.1rem;
+    border: 0 none;
+}
+
+.fenlei>div span p {
+    font-size: 0.12rem;
+    margin-top: 0.06rem;
+    font-weight: 540
+}
+
+/* 京东快报========== */
+.kuaibao {
+    width: 3.65rem;
+    height: 0.3rem;
+    padding: 0 0.05rem;
+    margin-bottom: 0.08rem;
+    /* background-color: tan; */
+    position: relative;
+
+}
+
+.kuaibao .img {
+    width: 0.74rem;
+    height: 0.16rem;
+    float: left;
+}
+
+.kuaibao .img img {
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 0.06rem;
+}
+
+.kuaibao .kuai-lun {
+    width: 3.65rem;
+    height: 0.3rem;
+    float: left;
+    /* background-color: #e43130; */
+    position: absolute;
+    overflow: hidden;
+    margin-left: 0.82rem;
+}
+
+.kuaibao .kuai-lun ul {
+    position: relative;
+
+}
+
+.kuaibao .kuai-lun ul li {
+    width: 2.49rem;
+    height: 0.16rem;
+    margin-top: 0.08rem;
+    margin-bottom: 0.06rem;
+    font-size: 0.12rem;
+    line-height: 0.16rem;
+    color: black;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.kuaibao .more {
+    font-size: 0.12rem;
+    position: absolute;
+    right: 0;
+    padding-left: 0.05rem;
+    border-left: 1px solid #cccccc;
+    margin-top: 0.1rem;
+    margin-right: 0.05rem;
+}
+
+/* 京东秒杀============== */
+.miaosha {
+    width: 100%;
+    height: 1.2rem;
+}
+
+.miaosha div {
+    float: left;
+    height: 100%;
+}
+
+.miaosha div img {
+    height: 100%;
+}
+
+.more i {
+    width: 0.11rem;
+    height: 0.11rem;
+    display: inline-block;
+    background: url(../img/arrow_rt.png) no-repeat;
+    background-size: cover;
+}
+
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    width: 0.8rem !important;
+    margin-right: 0rem !important;
+    position: relative;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.lun-k {
+    width: 0.8rem;
+    height: 1.25rem;
+    /* background-color: #e43130; */
+    font-size: 0.14rem;
+    color: red;
+}
+
+.lun-k img {
+    width: 100%;
+    display: block;
+}
+
+.swiper-slide .more-g {
+    width: 0.1rem;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0.1rem;
+    top: 0.2rem;
+    font-size: 0.12rem;
+    color: red;
+}
+
+/* go======== */
+.go {
+    width: 100%;
+}
+
+.go img {
+    width: 100%;
+}
+
+/* 东家小院======= */
+.dj-nav {
+    width: 100%;
+    background-color: #f6f6f6;
+}
+
+.dj-nav img {
+    height: 0.35rem;
+    margin: auto;
+    display: block;
+}
+
+.dj-top {
+    width: 100%;
+    height: 1.21rem;
+}
+
+.dj-top section {
+    width: 49.8%;
+    /* height: 100%; */
+    float: left;
+    /* background-color: darkcyan; */
+    padding-bottom: 0.1rem;
+    border-bottom: 1px solid rgb(250, 236, 236);
+    border-right: 1px solid rgb(250, 236, 236);
+
+}
+
+.dj-top section>div {
+    padding: 0.08rem 0 0.06rem;
+}
+
+.dj-top section>div .k-ge {
+    height: 0.38rem;
+    width: 1.87rem;
+    margin: auto;
+    text-align: center;
+    font-size: 0.14rem;
+}
+
+.dj-top section>div .k-ge span {
+    display: block;
+}
+
+.dj-top section>div .k-ge p {
+    font-size: 0.12rem;
+    color: rgb(54, 206, 233);
+    margin-top: 0.02rem;
+}
+
+.dj-top section>div img {
+    display: block;
+    float: left;
+    width: 0.65rem;
+    margin: 0.05rem 0.07rem 0;
+}
+
+.dj-bottom section>div {
+    width: 50% !important;
+    height: 100% !important;
+    float: left;
+    /* background-color: rosybrown; */
+    border-right: 1px solid rgb(250, 236, 236);
+    box-sizing: border-box;
+}
+
+.dj-bottom .dj-bottom1 p {
+    font-size: 0.14rem;
+    margin-left: 0.1rem;
+}
+
+.dj-bottom .dj-bottom2 p {
+    font-size: 0.14rem;
+    margin-left: 0.1rem;
+}
+
+/* 每日逛======== */
+.guang {
+    margin-top: 0.22rem;
+}
+
+.guang-img {
+    width: 100%;
+    height: 0.35rem;
+    background-color: #f6f6f6;
+
+}
+
+.guang-img img {
+    width: 100%;
+}
+
+.guang ul {
+    overflow: hidden;
+    width: 4rem;
+}
+
+.guang ul li {
+    float: left;
+    width: 0.92rem;
+    height: 1.2rem;
+    padding: 0.06rem 0 0.04rem 0.03rem;
+    border-bottom:1px solid  rgb(250, 236, 236);
+    border-right:1px solid  rgb(250, 236, 236);
+    /* background-color: darkcyan */
+}
+
+.guang ul li img {
+    width: 0.65rem;
+}
+
+.guang ul li>p:first-child {
+    text-align: left;  
+    font-size: 0.14rem;
+    background-image: linear-gradient(90deg, #FF2A2A,#F139D2);
+    -webkit-text-fill-color: transparent;   
+    -webkit-background-clip: text;  
+    margin-left: 0.1rem;   
+}
+.guang ul li img{
+    margin: 0.1rem auto;
+    display: block;
+}
+/* 爱生活========= */
+.love{
+    width: 100%;
+    height: 0.35rem;
+    background-color: #f6f6f6;
+}
+.love img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.lv-top .dj-top section>div .k-ge{
+    text-align: left;
+    margin-left: 0.2rem;
+}
+.lv-top .dj-top section>div .k-ge p{
+    color: red;
+}
+.lv-top .dj-top section{
+    padding-bottom: 0.05rem
+}
+/* 底部导航========= */
+.footer-nav{
+    width: 100%;
+    height: 0.5rem;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0 0 10px 0 hsla(0,6%,58%,.6);
+    background-color: white;
+    z-index: 998;
+}
+.footer-nav a{
+    display: block;
+    width: 20%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    /* background-color: #F139D2 */
+}
+.footer-nav a img{
+    width: 0.63rem;
+}

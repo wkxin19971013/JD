@@ -1,0 +1,534 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float:right;
+}
+.head{
+    width: 3.75rem;
+    height: 0.44rem;
+    background: transparent;
+    position: fixed;
+    top:0;
+    z-index: 15;
+}
+.head.active{
+    background: rgb(228, 74, 74);
+}
+.head .menu{
+    float:left;
+}
+.head .menu img{
+    margin: 0.14rem 0 0 0.15rem;
+    width:0.2rem;
+    height: 0.18rem;
+    display: block;
+}
+.head-input{
+    float: left;
+}
+.head-input .head-tit{
+    float: left;
+    width: 2.73rem;
+    height: 0.3rem;
+     margin-top: 0.07rem;
+     margin-left: 0.15rem;
+    background: #ffffff;
+    border-radius: 0.15rem;
+    border: none;
+}
+.head-tu{
+   position: relative;
+}
+i{
+    background: url(../img/jd-sprites.png);
+    display: inline-block;
+    vertical-align: middle;
+}
+.i1{
+    width:0.2rem;
+    height: 0.15rem;
+    display: block;
+    background: url(../img/kj.png)no-repeat;
+    background-size:0.2rem 0.15rem;
+    position: relative;
+    z-index: 2;
+    margin: 0.15rem 0.08rem 0 0.3rem;
+}
+.i2{
+    display: block;
+    width: 0.18rem;
+    height: 0.15rem;
+    background-position: -80px 0;
+    background-size: 200px;
+    margin: 0.08rem 0 0 0.15rem;
+    position: relative;
+    top:-0.3rem;
+    left: 0.45rem;
+    z-index: 1;
+    float: left;
+}
+.head-tu input{
+    border: 0;
+    background: 0 0;
+    font-size: 12px;
+    color: #232326;
+    padding-left: 5px;
+    height: auto;
+    margin: 0 0 0 5px;
+    width: 68%;
+    line-height: 30px;
+    position: absolute;
+    top: -7px;
+    left: 78px;
+}
+.denglu{
+    z-index: 120;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 44px;
+   
+}
+.denglu span{
+    display: inline-block;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 14px;
+    float: left;
+}
+.banner{
+    position: relative;
+    z-index: 1;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color:#000;
+    opacity: 1;
+    background: rgba(0,0,0,0.2);
+  }
+  .swiper-pagination-bullet-active {
+    color:#fff;
+    background: #007aff;
+  }
+  .swiper-slide img{
+      width: 3.75rem;
+      height: 1.82rem;
+  }
+  .banner2{
+      margin:0 auto;
+      width: 3.75rem;
+      height: 0.99rem;
+      border-radius: 10px;
+      /* border-top-left-radius : 10px;
+          border-top-right-radius :  10px;
+          border-bottom-right-radius:  10px;
+          border-bottom-left-radius : 10px; */
+  }
+  .banner2 img{
+      float: left;
+      width: 1.25rem;
+      height: 0.99rem;
+  }
+  .menu{
+      position: relative;
+  }
+  .menu-bg img{
+      width: 3.75rem;
+      height: 1.61rem;
+  }
+  .menu-list{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .menu-list img{
+      width: 0.39rem;
+      height: 0.39rem;
+      margin-top: 0.3rem;
+  }
+  .menu-list a{
+      width: 20%;
+      font-size: 0.12rem;
+      height: 0.73rem;
+      display: block;
+     float: left;
+     text-align: center;
+  }
+  .menu-list a span{
+    display: block;
+    margin-top: 0.05rem;
+  }
+  .jdkb{
+      position: relative;
+      width: 3.75rem;
+      height: 0.3rem;
+  }
+  .jdkb .jdkb-img{
+    width: 0.72rem;
+    height: 0.15rem;
+    margin-left: 0.15rem;
+    margin-top: 0.05rem;
+    float: left;
+    display: block;
+  }
+  .jdkb .jdkb-img img{
+    width:100%;
+    float: left;
+    
+  }
+.jdkb_zhong{
+    margin-top: 5px;
+    margin-left: 9px;
+    position: relative;
+    width: 2.2rem;
+    height: 0.18rem;
+    overflow: hidden;
+    font-size: 0.12rem;
+} 
+.jdkb_zhong ul{
+    display: block;
+}
+.jdkb_zhong li{
+    position: relative;
+}
+.jdkb_zhong span{
+    width: 0.5rem;
+    height: 0.14rem;
+    color: darkred;
+    display: inline-block;
+    font-size: 0.12rem;
+}
+.jdkb_zhong a {
+    display: inline-block;
+    width: 4rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+    top: 2px;
+    font-size: 0.12rem;
+}
+
+.jdkb_you{
+    position: relative;
+}
+.jdkb_you span{
+    margin-right: 7px;
+    position: relative;
+    top: 10px;
+    font-size: 0.12rem;
+    float: left;
+    line-height: 7px;
+}
+.jdkb_you span:after{
+    content: '';
+    display: block;
+    height: 0.17rem;
+    border-left: 1px solid grey;
+    margin-top: -10px;
+    margin-left: -16px;
+}
+/* 京东快报下的图 */
+.one-tu{
+    width: 100%;
+    height: 1.19rem;
+    background: #fff;
+    margin-top: 0.05rem;
+}
+.one-tu div{
+    height: 1.19rem;
+}
+.one-tu1 img{
+    width: 1.86rem;
+    height: 1.19rem;
+}
+.one-tu2 img{
+    width: 0.92rem;
+    height: 1.19rem;
+}
+.one-tu3 img{
+    width: 0.93rem;
+    height: 1.19rem;
+}
+/* 京东秒杀 */
+.jdms{
+    width: 3.75rem;
+    height: 0.33rem;
+}
+.jdms span{
+    float: left;
+}
+.jdms-1{
+    margin: 0.1rem 0.15rem 0;
+    display:inline-block;
+    vertical-align: middle;
+    font-size: 0.18rem;
+    color: #f02b2b;
+    font-weight: 700;
+}
+.jdms-2{
+    font-weight: 700;
+    font-size: 0.12rem;
+    color: #232326;
+    margin:0.12rem 0;
+}
+.jdms-3{
+    font-size: 0.12rem;
+    margin:0.12rem 0.13rem 0;
+}
+.jdms a{
+    font-size: 0.12rem;
+    color: #f03030;
+    float:right;
+    margin-top: 0.1rem;
+    display: inline-block;
+    position: relative;
+    padding-right: 22px;
+}
+.i3{
+    background: url(../img/arrow_rt.png);
+    width: 11px;
+    height: 11px;
+    background-size: cover;
+    position: absolute;
+    top:3px;
+    right: 8px;
+}
+/* 京东秒杀下轮播图 */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+   
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .jdms-tu .swiper-slide{
+      width: 0.8rem !important;
+      height: 1.24rem;
+  }
+  .jdms-tu{
+      width: 3.75rem;
+      height: 1.24rem;
+  }
+.jdms-tu-img img{
+    width: 0.7rem;
+    height: 0.7rem;
+}
+  .haha{
+      width: 8.58rem;
+      height: 1.24rem;
+  }
+  .jdms-tu-img img{
+     margin-left: 0.02rem;
+  }
+.jdms-tu-price{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+.jdms-tu-price .no{
+    color: #686868;
+    font-size: 12px;
+    text-decoration: line-through;
+    line-height: 12px;
+    margin: 4px 0 11px;
+    text-align: center;
+    padding: 0 2px;
+    display: inline-block;
+    position: relative;
+}
+
+/* 动图 */
+.gif{
+    margin-top: 0.12rem;
+    height: 1.14rem;
+}
+.gif img{
+    width: 3.75rem;
+    height: 1.14rem;
+}
+/* 东家小院  */
+.djxy{
+    width: 3.75rem;
+    height: 2.75rem;
+    margin-top: 0.12rem;
+}
+.dixy-img{
+    width: 3.75rem;
+    height: 0.34rem;
+    position: relative;
+    background-color: #f6f6f6;
+}
+.dixy-img img{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height: 0.34rem;
+     text-align: center;
+     margin: 0 auto;
+}
+.djxy-two{
+    width: 3.75rem;
+    height: 3.6rem;
+}
+.djxy-two ul{
+    height: 1.2rem;
+}
+.djxy-two li{
+    width: 1.87rem;
+    height: 1.19rem;
+    float: left;
+}
+.djxy-two-tit{
+    height: 0.37rem;
+    overflow: initial;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-right: .5rem;
+    float: left;
+    padding: 0 0 0 .45rem;
+}
+.djxy-two-tit span{
+    display: inline-block;
+    font-size: 0.15rem;
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+    float: left;
+    z-index: 20;
+}
+.djxy-two-tit p{
+    color: #648EFF;
+    font-size: 0.12rem;
+    float: left;
+    text-align: center;
+}
+.djxy-two-img{
+    float: left;
+    width: 1.86rem;
+    height: 1.15rem;
+    text-align: center;
+    margin-right: 0.3rem;
+    margin-top: -0.3rem;
+}
+.djxy-two-img img{
+    width: 0.64rem;
+    height: 0.64rem;
+}
+.djxy-tu-2 li{
+    border-right: 1px solid #f5f5f5;
+    position: relative;
+    width: 24.5%;
+    float: left;
+}
+.djxy-tu-2 li:last-child{
+    border: none;
+}
+.bdr-r{
+    overflow: hidden;
+}
+.bdr-r .djxy-two-tit{
+    padding: 0 0 0 0.2rem;
+}
+.bdr-r .kgdrimg{
+    width: 0.7rem;
+    height: 0.7rem;
+    float: left;
+}
+.bdr-r .kgdrimg img{
+    width: 0.64rem;
+    height: 0.64rem;
+    margin-left:0.15rem;
+    float: left;
+} 
+/* 每日逛 */
+.mrg{
+    margin-top: 0;
+}
+/* 爱生活 */
+.ash .djxy-two .djxy-two-tit{
+    padding: 0 0 0 .3rem;
+}
+/* 逛商场 */
+.gsc{
+    margin-top: 1.2rem;
+    height: 5.2rem;
+}
+.gsc .djxy-two-tit{
+    padding: 0 0 0 .3rem;
+}
+/* 底部 */
+.footer{
+    height: 0.42rem;
+    width: 3.75rem;
+    background: #fff;
+    position:fixed;
+    left:0;
+    bottom:0;
+    z-index: 22222;
+    box-sizing: border-box;
+}
+.footer a{
+    width: 20%;
+    height: 0.42rem;
+    float: left;
+    display: inline-block;
+}
+.footer img{
+    width: 0.6rem;
+    height: 0.42rem;
+    float: left;
+}
